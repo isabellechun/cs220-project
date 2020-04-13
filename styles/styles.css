@@ -1,0 +1,29 @@
+body {
+    font-family: 'Raleway';font-size: 22px;
+}
+
+.content {
+  padding-bottom: 5%;
+}
+
+.img-container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.persona-img {
+  margin: auto;
+  display: inline-block;
+  width: 30%;
+  padding: 5%;
+}
+
+.task-analysis-img {
+  width: 80%;
+  padding: 5%;
+}
+
+ #home-title-blue {
+   color: blue;
+ }
