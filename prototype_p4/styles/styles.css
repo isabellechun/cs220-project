@@ -1,0 +1,23 @@
+h1 {
+    font-family: 'Raleway';font-size: 30px; 
+}
+#welcome { font-size: 10px;}
+
+
+#menu {
+    color:red;
+    display:block;
+    float:left;
+}
+#title {
+    color:black;
+    display:inline-block;
+}
+#profile {
+  padding-left: 50;
+}
+.container-fluid {
+    margin:0 auto;
+    display:inline-block;
+    text-align:center;
+}
