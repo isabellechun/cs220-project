@@ -3,6 +3,7 @@ h1 {
     font-size: 30px;
 }
 
+
 h2 {
     font-family: 'Raleway';
     font-size: 22px;
@@ -23,9 +24,7 @@ h5 {
     font-size: 5px;
 }
 
-/* #welcome {
-  font-size: 10px;
-} */
+#welcome { font-size: 10px;}
 
 
 #menu {
@@ -33,23 +32,26 @@ h5 {
     display:block;
     float:left;
 }
-
 #title {
     color:black;
     display:inline-block;
 }
-
 #profile {
   padding-left: 50;
 }
-
 .container-fluid {
     margin:0 auto;
     display:inline-block;
     text-align:center;
 }
 
-.rounded-circle {
-  width: 200px;
-  height: 200px;
-}
+
+.btn-circle.btn-xl {
+           width: 180px;
+           height: 180px;
+           padding: 40px 60px;
+           border-radius: 90px;
+           font-size: 20px;
+           text-align: left;
+
+       }
