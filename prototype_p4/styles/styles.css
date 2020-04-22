@@ -1,5 +1,5 @@
 h1 {
-    font-family: 'Raleway';font-size: 30px; 
+    font-family: 'Raleway';font-size: 30px;
 }
 #welcome { font-size: 10px;}
 
@@ -21,3 +21,14 @@ h1 {
     display:inline-block;
     text-align:center;
 }
+
+
+.btn-circle.btn-xl {
+           width: 180px;
+           height: 180px;
+           padding: 40px 60px;
+           border-radius: 90px;
+           font-size: 20px;
+           text-align: left;
+
+       }
