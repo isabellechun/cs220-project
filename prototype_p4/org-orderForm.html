@@ -1,0 +1,183 @@
+<!doctype html>
+<link rel="stylesheet" href="./styles/styles.css">
+<html lang="en">
+<head>
+  <!-- <link href="StyleSheet.css" rel="stylesheet"> -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+  <link rel="stylesheet" href="prototype_p4\styles\styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cs.wellesley.edu/~anderson/js/bounds/bounds-plugin.js"></script>
+  <meta name=author content="Your name here">
+  <title>EatsWell</title>
+  <a href="https://icons8.com/icon/3096/menu"></a>
+</head>
+
+<body>
+    <div class="d-flex flex-row justify-content-between">
+      <div class = "p-2">
+      <p>
+        <a href="./org-menu.html">
+          <img id="menu" src="./images/menu_bar.png" width= 50 height= 50>
+        </a>
+      </p>
+    </div>
+     <div class = "align-items-start">
+      <h1 id="title">Eats<span style="color:blue">W</span>ell</h1>
+      </div>
+    <div class = "p-2" id="profile">
+      <p>
+        <a href="./studentProfile.html">
+          <img id="profile" src="./images/profile_icon.png"  width= 50 height= 50>
+        </a>
+      </p>
+      </div>
+    </div>
+
+  <div class= "d-flex flex-column align-items-start" >
+    <div class="d-flex dropdown mb-3" stlye="width 300%">
+      <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        We're selling
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item font-weight-bold" href="#">Boba</a>
+        <a class="dropdown-item " href="#">Snacks</a>
+        <a class="dropdown-item" href="#">Ramen</a>
+        <a class="dropdown-item" href="#">New (Add Here)</a>
+      </div>
+    </div>
+
+    <div class="dropdown mb-3">
+      <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Flavors
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item font-weight-bold" href="#">Taro</a>
+        <a class="dropdown-item font-weight-bold" href="#">Black Tea</a>
+        <a class="dropdown-item font-weight-bold" href="#">Thai Tea</a>
+        <a class="dropdown-item" href="#">New (Add Here)</a>
+        <a class="dropdown-item" href="#">N/A</a>
+      </div>
+    </div>
+
+    <div class="dropdown mb-3">
+      <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Price
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item font-weight-bold" href="#">Input Price per Order Here: $6</a>
+        <a class="dropdown-item" href="#">If additional cost,
+           input delivery price here: <span style="font-bold">N/A</span></a>
+      </div>
+    </div>
+
+    <div class="dropdown mb-3">
+      <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        On the Form
+      </button>
+      <!-- put in pop model -->
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" >
+        <a class="dropdown-item" href="#">
+          <div class="row justify-content-between">
+            <div class ="col-sm-2 ">
+          <label class="form-check-label " for="defaultCheck1">
+            Name
+          </label>
+          </div>
+           <div class = "col-sm-4 ml-5">
+          <input class="form-check-input mr-20" type="checkbox" value=""
+          id="defaultCheck1">
+          </div>
+      </div>
+    </a>
+        <a class="dropdown-item" href="#">
+          <div class="row justify-content-between">
+            <div class ="col-sm-2 ">
+          <label class="form-check-label " for="defaultCheck1">
+            Email
+          </label>
+          </div>
+           <div class = "col-sm-4 ml-5">
+          <input class="form-check-input mr-20" type="checkbox" value=""
+          id="defaultCheck1">
+          </div>
+      </div>
+        </a>
+
+        <a class="dropdown-item " href="#">
+          <div class="row justify-content-between">
+              <div class ="col-sm-2 ">
+                <label class="form-check-label " for="defaultCheck1">
+                  Flavor
+                </label>
+              </div>
+              <div class = "col-sm-4 ml-5">
+                <input class="form-check-input mr-20" type="checkbox" value=""
+                id="defaultCheck1">
+            </div>
+          </div>
+        </a>
+
+        <a class="dropdown-item " href="#">
+          <div class="row justify-content-between">
+              <div class ="col-sm-2 ">
+                <label class="form-check-label " for="defaultCheck1">
+                  Additional Notes
+                </label>
+              </div>
+              <div class = "col-sm-4 ml-5">
+                <input class="form-check-input mr-20" type="checkbox" value=""
+                id="defaultCheck1">
+            </div>
+          </div>
+        </a>
+
+        <a class="dropdown-item " href="#">
+          <div class="row justify-content-between">
+              <div class ="col-sm-2 ">
+                <label class="form-check-label " for="defaultCheck1">
+                  Quantity
+                </label>
+              </div>
+              <div class = "col-sm-4 ml-5">
+                <input class="form-check-input" type="checkbox" value=""
+                id="defaultCheck1">
+            </div>
+          </div>
+        </a>
+
+        <a class="dropdown-item " href="#">
+          <div class="row justify-content-between">
+              <div class ="col-sm-2  ">
+                <label class="form-check-label " for="defaultCheck1">
+                  Venmo Reminder
+                </label>
+              </div>
+              <div class = "col-sm-4 ml-5">
+                <input class="form-check-input mr-20" type="checkbox" value=""
+                id="defaultCheck1">
+            </div>
+          </div>
+        </a>
+      </div>
+      <p> Support Pre-Law Society order boba!
+        Each boba is $6! For your order to be complete you MUST
+      Venmo @PLSW by April 10th at 11:59pm. Pick up Thursday April 15th
+       12:30-1:30pm in Lulu/Bates</p>
+    </div>
+
+ </div>
+ <div class = "row align-items-center">
+   <a href="./pre-orderform.html">
+     <button type="button" class="btn btn-primary">Preview Order Form</button>
+   </a>
+ </div>
+
+</body>
+</html>
