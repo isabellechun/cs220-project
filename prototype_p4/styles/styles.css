@@ -4,6 +4,28 @@ h1 {
 
 body {
   font-family: 'Raleway';
+    font-size: 30px;
+}
+
+
+h2 {
+    font-family: 'Raleway';
+    font-size: 22px;
+}
+
+h3 {
+    font-family: 'Raleway';
+    font-size: 18px;
+}
+
+h4 {
+    font-family: 'Raleway';
+    font-size: 10px;
+}
+
+h5 {
+    font-family: 'Raleway';
+    font-size: 5px;
 }
 
 #welcome { font-size: 10px;}
@@ -28,9 +50,17 @@ body {
 }
 
 
-
 /* https://www.w3schools.com/charsets/ref_emoji.asp
 &#id;
 127849 = donut
 127850 = cookie
 */
+.btn-circle.btn-xl {
+           width: 180px;
+           height: 180px;
+           padding: 40px 60px;
+           border-radius: 90px;
+           font-size: 20px;
+           text-align: left;
+
+       }
