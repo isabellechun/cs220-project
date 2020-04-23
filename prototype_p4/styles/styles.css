@@ -1,5 +1,9 @@
 h1 {
-    font-family: 'Raleway';
+    font-family: 'Raleway';font-size: 30px;
+}
+
+body {
+  font-family: 'Raleway';
     font-size: 30px;
 }
 
@@ -46,6 +50,11 @@ h5 {
 }
 
 
+/* https://www.w3schools.com/charsets/ref_emoji.asp
+&#id;
+127849 = donut
+127850 = cookie
+*/
 .btn-circle.btn-xl {
            width: 180px;
            height: 180px;
