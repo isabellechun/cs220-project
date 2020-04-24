@@ -24,6 +24,24 @@ body {
   padding: 5%;
 }
 
+#domain-analysis {
+  display: inline-block;
+}
+
+#paperScreens {
+  width: 40%;
+  transform: rotate(90deg);
+  margin-top: 6%;
+  margin-bottom: 6%;
+}
+
+.domain-analysis-list {
+  display: inline-block;
+  width: 20%;
+  margin-left: 3%;
+}
+
+
  #home-title-blue {
    color: blue;
  }
