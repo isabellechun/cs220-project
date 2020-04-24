@@ -1,31 +1,32 @@
 h1 {
-    font-family: 'Raleway';font-size: 30px;
+    font-family: 'Raleway';
+    /* font-size: 30px; */
 }
 
 body {
   font-family: 'Raleway';
-    font-size: 30px;
+    /* font-size: 30px; */
 }
 
 
 h2 {
     font-family: 'Raleway';
-    font-size: 22px;
+    /* font-size: 22px; */
 }
 
 h3 {
     font-family: 'Raleway';
-    font-size: 18px;
+    /* font-size: 18px; */
 }
 
 h4 {
     font-family: 'Raleway';
-    font-size: 10px;
+    /* font-size: 10px; */
 }
 
 h5 {
     font-family: 'Raleway';
-    font-size: 5px;
+    /* font-size: 5px; */
 }
 
 #welcome { font-size: 10px;}
@@ -40,9 +41,7 @@ h5 {
     color:black;
     display:inline-block;
 }
-#profile {
-  padding-left: 50;
-}
+
 .container-fluid {
     margin:0 auto;
     display:inline-block;
