@@ -25,6 +25,14 @@ from https://bootstrapious.com/p/bootstrap-calendar
   }
 }
 
+h3 {
+  font-size: 2em;
+}
+
+h4 {
+  font-size: 1.7em;
+}
+
 .month-header {
   display: flex;
   flex-direction: column;
