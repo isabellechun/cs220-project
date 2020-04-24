@@ -25,26 +25,35 @@ body {
     font-family: 'Raleway';
 }
 </style>
-    <div class="d-flex flex-row justify-content-between">
-      <div class = "p-2">
-      <p>
-        <a href="./menu.html">
-          <img id="menu" src="./images/menu_bar.png" width= 50 height= 50>
-        </a>
-      </p>
-    </div>
-     <div class = "align-items-start">
-      <h1 id="title">Eats<span style="color:blue">W</span>ell</h1>
-      </div>
-    <div class = "p-2" id="profile">
-      <p>
-        <!-- change this later -->
-        <a href="./template.html">
-          <img id="profile" src="./images/profile_icon.png"  width= 50 height= 50>
-        </a>
-      </p>
+<div class="d-flex flex-row justify-content-between align-items-center">
+  <div class = "p-2">
+  <p class="nav-item dropdown"><div class="dropdown">
+      <button class="btn btn-link dropdown-toggle"
+      type="button"
+      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <img id="menu" src="../images/menu_bar.png" width= 50 height= 50>
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="upcomingFundraisers.html">Upcoming Fundraisers</a>
+        <!-- <a class="dropdown-item" href="calendar.html">Calendar</a> -->
+        <a class="dropdown-item" href="liveFeed.html">Live Feed</a>
+        <a class="dropdown-item" href="myOrders.html">My Orders Received</a>
+        <a class="dropdown-item" href="../home.html">Log Out</a>
       </div>
     </div>
+  </p>
+</div>
+ <div class = "align-items-start">
+  <h1 id="title">Eats<span style="color:blue">W</span>ell</h1>
+  </div>
+<div class = "p-2" id="profile">
+  <p>
+    <a class="btn btn-link" href="profileHome.html" role="button">
+      <img id="profile" src="../images/profile_icon.png"  width= 50 height= 50>
+    </a>
+  </p>
+  </div>
+</div>
 </body>
 
 <div class="jumbotron jumbotron-fluid" style="background-color:#234E5A;">

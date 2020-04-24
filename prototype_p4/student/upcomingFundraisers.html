@@ -1,5 +1,5 @@
 <!doctype html>
-<link rel="stylesheet" href="./styles/styles.css">
+<!-- <link rel="stylesheet" href="./styles/styles.css"> -->
 <html lang="en">
 <head>
   <!-- <link href="StyleSheet.css" rel="stylesheet"> -->
@@ -10,7 +10,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
-  <link rel="stylesheet" href="prototype_p4\styles\styles.css">
+  <link rel="stylesheet" href="../styles/styles.css">
   <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cs.wellesley.edu/~anderson/js/bounds/bounds-plugin.js"></script>
@@ -19,27 +19,38 @@
   <a href="https://icons8.com/icon/3096/menu"></a>
 </head>
 <body>
-    <div class="d-flex flex-row justify-content-between">
-      <div class = "p-2">
-      <p>
-        <a href="./menu.html">
-          <img id="menu" src="./images/menu_bar.png" width= 50 height= 50>
-        </a>
-      </p>
-    </div>
-     <div class = "align-items-start">
-      <h1 id="title">Eats<span style="color:blue">W</span>ell</h1>
+  <div class="d-flex flex-row justify-content-between align-items-center">
+    <div class = "p-2">
+    <p class="nav-item dropdown"><div class="dropdown">
+        <button class="btn btn-link dropdown-toggle"
+        type="button"
+        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img id="menu" src="../images/menu_bar.png" width= 50 height= 50>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="upcomingFundraisers.html">Upcoming Fundraisers</a>
+          <!-- <a class="dropdown-item" href="calendar.html">Calendar</a> -->
+          <a class="dropdown-item" href="liveFeed.html">Live Feed</a>
+          <a class="dropdown-item" href="myOrders.html">My Orders Received</a>
+          <a class="dropdown-item" href="../home.html">Log Out</a>
+        </div>
       </div>
-    <div class = "p-2" id="profile">
-      <p>
-        <!-- change this later -->
-        <a href="./studentProfile.html">
-          <img id="profile" src="./images/profile_icon.png"  width= 50 height= 50>
-        </a>
-      </p>
-      </div>
+    </p>
+  </div>
+   <div class = "align-items-start">
+    <h1 id="title">Eats<span style="color:blue">W</span>ell</h1>
     </div>
-     <div class= "">
+  <div class = "p-2" id="profile">
+    <p>
+      <a class="btn btn-link" href="profileHome.html" role="button">
+        <img id="profile" src="../images/profile_icon.png"  width= 50 height= 50>
+      </a>
+    </p>
+    </div>
+  </div>
+
+
+     <div>
        <section id= 'upcoming_title' style="background:#5AC0CF;padding: 30px 0;
 text-align: center;" > <span style="color:black; font-size: 30px;">Upcoming Fundraisers</span> </section>
        </div>
