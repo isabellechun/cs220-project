@@ -109,8 +109,9 @@
       </li>
       <li>
         <div class="date">
-          6<br/>
-          <p class="emoji">&#127839;</p>
+          6
+          <!-- <br/>
+          <p class="emoji">&#127839;</p> -->
         </div>
 
       </li>
@@ -131,8 +132,9 @@
       </li>
       <li>
         <div class="date">
-          12<br/>
-          <p class="emoji">&#X1F957;</p>
+          12
+          <!-- <br/>
+          <p class="emoji">&#X1F957;</p> -->
         </div>
       </li>
       <li>
@@ -154,8 +156,8 @@
       </li>
       <li>
         <div class="date">18
-          <br/>
-          <p class="emoji">&#X1F9C1;</p>
+          <!--<br/>
+          <p class="emoji">&#X1F9C1;</p> -->
         </div>
       </li>
       <li>
@@ -169,17 +171,18 @@
       </li>
       <li>
         <div class="date">
-          22<br/>
-          <p class="emoji">&#X1F964;</p>
+          22
+          <!-- <br/>
+          <p class="emoji">&#X1F964;</p> -->
         </div>
         <!-- <p>&#X1F9CB;</p> boba doesn't work :( -->
       </li>
       <li>
         <div class="date">23</div>
       </li>
-      <li class="today selected" id="click-24">
-        <div class="date">24<br/>
-        <p class="emoji">&#X1F36A;&#X1F35C;</p>
+      <li class="today selected click-24">
+        <div class="date click-24">24<br/>
+        <p class="emoji click-24">&#X1F36A;&#X1F35C;</p>
         <!-- <p class="emoji"></p> -->
       </div>
 
@@ -190,20 +193,20 @@
       <li>
         <div class="date">26</div>
       </li>
-      <li id="click-27">
-        <div class="date">
+      <li class="click-27">
+        <div class="date click-27">
           27
           <br/>
-          <p class="emoji">&#127849;</p>
+          <p class="emoji click-27">&#127849;</p>
         </div>
 
       </li>
-      <li id="click-28">
-        <div class="date">
+      <li class="click-28">
+        <div class="date click-28">
           28
           <br/>
           <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/emojipedia/240/bubble-tea_1f9cb.png"
-          class="calendar-icon"
+          class="calendar-icon click-28"
           alt="boba"/>
         </div>
 
@@ -453,25 +456,25 @@ $(document).ready( function( ) { // all jQuery code, all event listeners
     $('#click-show-27').hide()
     $('#click-show-28').hide()
     $('#none').show()
+  })
 
-    $('#click-24').on('click', function (event) {
-      $('#none').hide()
-      $('#click-show-24').show()
-      $('#click-show-27').hide()
-      $('#click-show-28').hide()
-    })
-    $('#click-27').on('click', function (event) {
-      $('#none').hide()
-      $('#click-show-24').hide()
-      $('#click-show-27').show()
-      $('#click-show-28').hide()
-    })
-    $('#click-28').on('click', function (event) {
-      $('#none').hide()
-      $('#click-show-24').hide()
-      $('#click-show-27').hide()
-      $('#click-show-28').show()
-    })
+  $('.click-24').on('click', function (event) {
+    $('#none').hide()
+    $('#click-show-24').show()
+    $('#click-show-27').hide()
+    $('#click-show-28').hide()
+  })
+  $('.click-27').on('click', function (event) {
+    $('#none').hide()
+    $('#click-show-24').hide()
+    $('#click-show-27').show()
+    $('#click-show-28').hide()
+  })
+  $('.click-28').on('click', function (event) {
+    $('#none').hide()
+    $('#click-show-24').hide()
+    $('#click-show-27').hide()
+    $('#click-show-28').show()
   })
 
 } )
