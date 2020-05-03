@@ -12,6 +12,13 @@ body {
   margin-right: auto;
 }
 
+.screens {
+  margin: auto;
+  display: inline-block;
+  width: 30%;
+  padding: 5%;
+}
+
 .persona-img {
   margin: auto;
   display: inline-block;
