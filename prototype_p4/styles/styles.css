@@ -48,6 +48,14 @@ h5 {
     text-align:center;
 }
 
+.green-title-div {
+  text-align: center;
+  background-color: #7F9D22;
+  /* color: white; */
+  padding: 0.6em;
+  margin-bottom: 1em;
+}
+
 
 /* https://www.w3schools.com/charsets/ref_emoji.asp
 &#id;

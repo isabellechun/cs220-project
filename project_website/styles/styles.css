@@ -12,6 +12,13 @@ body {
   margin-right: auto;
 }
 
+.screens {
+  margin: auto;
+  display: inline-block;
+  width: 30%;
+  padding: 5%;
+}
+
 .persona-img {
   margin: auto;
   display: inline-block;
@@ -24,13 +31,16 @@ body {
   padding: 5%;
 }
 
+/* #navbarNav {
+  background-color: #234E5A;
+} */
+
 #domain-analysis {
   display: inline-block;
 }
 
 #paperScreens {
   width: 40%;
-  transform: rotate(90deg);
   margin-top: 6%;
   margin-bottom: 6%;
 }

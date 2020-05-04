@@ -18,7 +18,7 @@
   <a href="https://icons8.com/icon/3096/menu"></a>
 </head>
 
-<body>
+<body style="margin-bottom: 5%">
   <div class="d-flex flex-row justify-content-between align-items-center">
     <div class = "p-2">
     <p class="nav-item dropdown"><div class="dropdown">
@@ -51,7 +51,100 @@
     </div>
   </div>
 
-  <div class= "d-flex flex-column align-items-center" >
+  <section class="green-title-div">
+    <h2>Create a Fundraiser</h2>
+  </section>
+  <!-- <div id="createFundraiserTitle">
+  <h2>Create a Fundraiser</h2>
+  </div> -->
+
+<!-- New form -->
+  <form style="margin-left: 15%; align-items: center;">
+
+    <div class="form-group row">
+      <label class="col-xs-2 col-form-label">Fundraiser Title</label>
+      <div class="form-group col-xs-8" style="margin-left: 5%;">
+        <input type="text" width="100%">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <span>Quick add fields to fundraiser form:</span>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" checked>
+      <label class="form-check-label" for="defaultCheck1">Name</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" checked>
+      <label class="form-check-label" for="defaultCheck1">Email</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" checked>
+      <label class="form-check-label">Quantity</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" checked>
+      <label class="form-check-label">Additional Notes</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" checked>
+      <label class="form-check-label">Venmo Reminder</label>
+    </div>
+  </div>
+
+  <div class="form-group row col-xs-12">
+    <label class="col-xs-2 col-form-label">We're Selling</label>
+    <div class="col-xs-8" style="margin-left: 5%;">
+      <!-- <input type="email" class="form-control"> -->
+    <select class="form-control " id="item-sold">
+      <option selected>Choose...</option>
+      <option>Boba</option>
+      <option>Snacks</option>
+      <option>Ramen</option>
+      <option value="new">New</option>
+    </select>
+    </div>
+  </div>
+
+  <div class="form-group row col-xs-12">
+    <label class="col-sm-2 col-form-label">Flavors</label>
+    <div class="form-group col-sm-2" id="flavor">
+      <input type="text" id="new-flavor">
+    <!-- </div>
+    <div class="col-auto">
+      style="margin-left: 5%;" -->
+    </div>
+
+    <button type="button" class="btn btn-outline-secondary mb-2" id="flavor-submit">Add flavor</button>
+    <ul id="flavor-list">
+      <!-- <li class="list-group-item active">Cras justo odio</li> -->
+    </ul>
+    <!-- <div id="flavor-list" style="height: 1.2em;"></div><br/> -->
+  </div>
+
+
+
+    <div class="form-group row col-xs-12">
+      <label class="col-sm-2 col-form-label">Price per order</label>
+      <span class="form-group col-sm-2" style="display: inline-block;">
+        <span>$</span><input type="text">
+      </span>
+    </div>
+
+    <div class="form-group row col-xs-12">
+      <label class="col-form-label">Fundraiser Description</label>
+      <div class="form-group col-sm-10" id="flavor">
+        <textarea name="Text1" cols="40" rows="7">Support Pre-Law Society and preorder boba!
+Each boba is $6!
+For your order to be complete you MUST Venmo @PLSW by April 10th at 11:59pm.
+Pick up Thursday April 15th 12:30-1:30pm in Lulu/Bates</textarea>
+   </div>
+    </div>
+
+  </form>
+
+
+  <!-- <div class= "d-flex flex-column align-items-center" >
     <div class="d-flex flex-row dropdown mb-3 btn-group btn-block">
       <button class="btn btn-secondary  btn-block dropdown-toggle" type="button" id="dropdownMenuButton"
       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -93,7 +186,7 @@
       <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         On the Form
       </button>
-      <!-- put in pop model -->
+
       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" >
         <a class="dropdown-item" href="#">
           <div class="row justify-content-between">
@@ -186,13 +279,32 @@
     you MUST Venmo @PLSW by April 10th at 11:59pm.<br>Pick up Thursday April 15th
    12:30-1:30pm in Lulu/Bates</br>
  </p>
-</div>
+</div> -->
 
 
- <div class = "row align-items-center">
+ <div class = "row align-items-center justify-content-center ">
    <a class="btn btn-primary" href="previewFundraiser.html" role="button">Preview Order Form</a>
  </div>
   </div>
+
+  <script>
+  $(document).ready( function( ) { // all jQuery code, all event listeners
+
+    $('#flavor-submit').on('click', function (event) {
+      let t = $('#new-flavor').val()
+      console.log(t)
+      // var par = document.createElement('li'),
+      // let txt = document.createTextNode(t)
+      // par.appendChild(txt)
+      // console.log(par)
+      $('#flavor-list').append(t + "  ")
+      $('#new-flavor').val("")
+      // use .append, "\n" isn't working
+    })
+
+
+  } )
+  </script>
 
 </body>
 </html>
