@@ -62,9 +62,9 @@
   <form style="margin-left: 15%; align-items: center;">
 
     <div class="form-group row">
-      <label class="col-sm-2 col-form-label">Fundraiser Title</label>
-      <div class="form-group col-sm-8">
-        <input type="text" width="auto">
+      <label class="col-xs-2 col-form-label">Fundraiser Title</label>
+      <div class="form-group col-xs-8" style="margin-left: 5%;">
+        <input type="text" width="100%">
       </div>
     </div>
 
@@ -92,45 +92,49 @@
     </div>
   </div>
 
-    <div class="form-group row">
-      <label class="col-sm-2 col-form-label">We're Selling</label>
-      <!-- <div class="col-sm-10">
-        <input type="email" class="form-control"> -->
-      <select class="form-control col-sm-4" id="item-sold">
-        <option selected>Choose...</option>
-        <option>Boba</option>
-        <option>Snacks</option>
-        <option>Ramen</option>
-        <option value="new">New</option>
-      </select>
-      <div class="form-group col-sm-2" id="new-item-sold" style="display: none;">
-        <input type="text" >
-      </div>
-      <!-- </div> -->
+  <div class="form-group row col-xs-12">
+    <label class="col-xs-2 col-form-label">We're Selling</label>
+    <div class="col-xs-8" style="margin-left: 5%;">
+      <!-- <input type="email" class="form-control"> -->
+    <select class="form-control " id="item-sold">
+      <option selected>Choose...</option>
+      <option>Boba</option>
+      <option>Snacks</option>
+      <option>Ramen</option>
+      <option value="new">New</option>
+    </select>
+    </div>
+  </div>
+
+  <div class="form-group row col-xs-12">
+    <label class="col-sm-2 col-form-label">Flavors</label>
+    <div class="form-group col-sm-2" id="flavor">
+      <input type="text" id="new-flavor">
+    <!-- </div>
+    <div class="col-auto">
+      style="margin-left: 5%;" -->
     </div>
 
-    <div class="form-group row">
-      <label class="col-sm-2 col-form-label">Flavors</label>
-      <div class="form-group col-sm-2" id="flavor">
-        <input type="text" id="new-flavor">
-      </div>
-      <div class="col-auto" style="margin-left: 5%;">
-      <button type="submit" class="btn btn-primary mb-2" id="flavor-submit">Add flavor</button>
-      </div>
-    </div>
-    <div id="flavor-list"></div>
+    <button type="button" class="btn btn-outline-secondary mb-2" id="flavor-submit">Add flavor</button>
+    <ul id="flavor-list">
+      <!-- <li class="list-group-item active">Cras justo odio</li> -->
+    </ul>
+    <!-- <div id="flavor-list" style="height: 1.2em;"></div><br/> -->
+  </div>
 
-    <div class="form-group row">
+
+
+    <div class="form-group row col-xs-12">
       <label class="col-sm-2 col-form-label">Price per order</label>
       <span class="form-group col-sm-2" style="display: inline-block;">
         <span>$</span><input type="text">
       </span>
     </div>
 
-    <div class="form-group row">
+    <div class="form-group row col-xs-12">
       <label class="col-form-label">Fundraiser Description</label>
-      <div class="form-group col-sm-8" id="flavor">
-        <textarea name="Text1" cols="60" rows="7">Support Pre-Law Society and preorder boba!
+      <div class="form-group col-sm-10" id="flavor">
+        <textarea name="Text1" cols="40" rows="7">Support Pre-Law Society and preorder boba!
 Each boba is $6!
 For your order to be complete you MUST Venmo @PLSW by April 10th at 11:59pm.
 Pick up Thursday April 15th 12:30-1:30pm in Lulu/Bates</textarea>
@@ -278,7 +282,7 @@ Pick up Thursday April 15th 12:30-1:30pm in Lulu/Bates</textarea>
 </div> -->
 
 
- <div class = "row align-items-center justify-content-center">
+ <div class = "row align-items-center justify-content-center ">
    <a class="btn btn-primary" href="previewFundraiser.html" role="button">Preview Order Form</a>
  </div>
   </div>
@@ -287,11 +291,13 @@ Pick up Thursday April 15th 12:30-1:30pm in Lulu/Bates</textarea>
   $(document).ready( function( ) { // all jQuery code, all event listeners
 
     $('#flavor-submit').on('click', function (event) {
-      let prev = $('#flavor-list').val()
-      let t = $('#new-flavor').val() + "\n"
-      let newt = prev + t
-      console.log(newt)
-      $('#flavor-list').text(t)
+      let t = $('#new-flavor').val()
+      console.log(t)
+      // var par = document.createElement('li'),
+      // let txt = document.createTextNode(t)
+      // par.appendChild(txt)
+      // console.log(par)
+      $('#flavor-list').append(t + "  ")
       $('#new-flavor').val("")
       // use .append, "\n" isn't working
     })
